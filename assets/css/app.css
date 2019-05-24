@@ -41,7 +41,15 @@ h2.font-weight-bold.title-plx {
 }
 
 h3 {
+  color: white;
+  text-align: center;
+  padding-top: 40px;
   padding-bottom: 40px;
+}
+
+h3.title-skills {
+  font-family: 'montserrat', sans-serif;
+  font-size: 2.5em;
 }
 
 .lead {
@@ -52,7 +60,7 @@ h3 {
 
 #plx {
     background-image: url('../img/img8.jpg');
-    height: 650px;
+    height: 680px;
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
@@ -77,23 +85,20 @@ h3 {
   align-items: center;
 }
 
+.whatsapp-parrafo {
+  color: white;
+}
+
 section#skills {
   padding-top: 40px;
 
 }
 
-h3 {
-  color: white;
-  text-align: center;
-  font-size: 2em;
-}
-
-h3.title-skills {
-  font-weight: 500;  
-}
-
 p.paragraph {
+  margin-top: 20px;
   padding-bottom: 50px;
+  margin-left: 50px;
+  margin-right: 50px;
   color: white;
   font-size: 1.2em;
 }
@@ -107,30 +112,29 @@ img.softrestaurant {
   width: 253px;
 }
 
+.img-services {
+  height: 64px;
+  width: 64px;
+}
 
 p.text-services {
   padding-top: 10px;
   padding-bottom: 50px;
-  color: #b3d7ff;
+  color: #000000 !important;
 }
 
 img.outsourcing {
   height: 65px !important;
 }
 
-/* h3.title-skills {
-  font-family: 'Quicksand', sans-serif;
-  font-size: 5em;
-} */
-
 #Acerca img {
   max-width: 100%;
 }
 
-#Acerca h2 {
-  /* font-family: 'Lily Script One', cursive; */
-  font-family: 'Quicksand', sans-serif;
-  font-weight: 800;
+/* #Acerca h2 {
+  font-family: 'Lily Script One', cursive; */
+  /* font-family: 'Quicksand', sans-serif;
+  font-weight: 800; */
 }
 
 #Whatsapp  p {
@@ -174,7 +178,7 @@ p.counter {
   font-size: 2em;
   color: white;
   margin-top: 40px;
-  margin-bottom: 40px;
+  margin-bottom: 80px;
 }
 
 .btn.btn-whatsapp{
@@ -201,7 +205,41 @@ p.counter {
   color: white;
 }
 
-footer {
-  background: linear-gradient(90deg, #0068af, #0068AF);
-  width: 100%;
+
+.title-partners {
+  color: #0066d3;
+  font-size: 2.2em;
+  font-weight: 600;
+  margin-top: 50px;
+  margin-bottom: 30px;
+}
+
+section#partners {
+  margin-bottom: 60px;
+}
+
+.partnersfilter img {
+  filter: grayscale(1);
+  -webkit-filter: grayscale(1);
+  -moz-filter: grayscale(1);
+  -ms-filter: grayscale(1);
+  -o-filter: grayscale(1);
+}
+.partnersfilter img:hover {
+  filter: grayscale(0);
+  -webkit-filter: grayscale(0);
+  -moz-filter: grayscale(0);
+  -ms-filter: grayscale(0);
+  -o-filter: grayscale(0);
+}
+
+
+#footer {
+  /* background: linear-gradient(90deg, #0068af, #0068AF); */
+  /* width: 100%; */
+    display: block;
+    text-align: center;
+    background-color: #1b2127;
+    padding-top: 20px;
+    color: white;
 }
