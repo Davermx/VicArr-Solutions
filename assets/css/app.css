@@ -37,20 +37,27 @@
 }
 
 h2.font-weight-bold.title-plx {
-    color: #0068af;     
+    color: #0068af;    
 }
 
 h3 {
-  color: white;
+  /* color: white; */
   text-align: center;
   padding-top: 40px;
-  padding-bottom: 40px;
+  padding-bottom: 10px;
 }
 
 h3.title-skills {
   font-family: 'montserrat', sans-serif;
-  font-size: 2.5em;
+  font-size: 2.2em;
+  font-weight: 700;
 }
+
+h4.title-app {
+  margin-top: 40px;
+  color: #000000 !important;
+}
+
 
 .lead {
     color: black;
@@ -66,14 +73,85 @@ h3.title-skills {
     background-repeat: no-repeat;
     background-size: cover;
   }
+ 
+ .banner_area:before {
+    content: "";
+    background: url('../img/backgroundheader.png') no-repeat scroll center right;
+    position: absolute;
+    right: 0px;
+    top: 0px;
+    height: 100%;
+    max-width: 1233px;
+    width: 100%;
+}
 
+.banner_area {
+  position: relative;
+  z-index: 3;
+  overflow: hidden;
+}
+
+.banner_inner_text {
+  padding-top: 160px;
+  position: relative;
+  padding-bottom: 95px;
+}
+
+.banner_inner_text:before {
+  content: "";
+  width: 213px;
+  /* height: 1px; */
+  position: absolute;
+  background: #ced0e0;
+  left: 0px;
+  bottom: 0px;
+}
+
+.banner_inner_text h2 {
+  font-size: 72px;
+  color: #0b1033;
+  font-family: "Roboto", sans-serif;
+  font-weight: normal;
+}
+
+.banner_inner_text p {
+  font-size: 24px;
+  color: #6b7d8e;
+  font-family: "Roboto", sans-serif;
+  font-weight: normal;
+  padding-top: 15px;
+}
+  /* header#Acerca {
+    background-image: url('');
+    height: 600px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+  } */
+
+
+/*   
+  header#header-services {
+    background-image: url('../img/img5.jpg');
+    height: 680px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+   } */
+
+p.title-correo{
+  text-align: center;
+
+}
 
 #skills {
   /* background: linear-gradient(90deg,#007bff, #0068af, #1c3643); */
   /* background: linear-gradient(90deg,#025a86, #16589e 25%, #0066d3); */
   /* background: rgba(3,109,222,1); */
-  background-color: #0066d3;
-  height: auto;
+  /* background-color: #0066d3; */
+  background-image: linear-gradient( 180deg,#000, #ABDCFF, #0396FF 100%);
+  /* height: auto; */
 }
 
 #Whatsapp {
@@ -85,21 +163,199 @@ h3.title-skills {
   align-items: center;
 }
 
+section#boletin {
+  padding-top: 70px;
+  padding-bottom: 70px;
+  background-image: linear-gradient( 135deg, #3C8CE7 10%, #00EAFF 100%);
+}
+
 .whatsapp-parrafo {
   color: white;
 }
 
+/* inicia servicios */
+.features-services {
+  color:#313437;
+  background-color:#fff;
+  padding-bottom:30px;
+}
+
+@media (max-width:767px) {
+  .features-services {
+    padding-bottom:10px;
+  }
+}
+
+/* .features-clean p {
+  color:#7d8285;
+} */
+
+.features-clean h2 {
+  font-weight:bold;
+  margin-bottom:40px;
+  padding-top:40px;
+  color:inherit;
+}
+
+@media (max-width:767px) {
+  .features-clean h2 {
+    margin-bottom:25px;
+    padding-top:25px;
+    font-size:24px;
+  }
+}
+
+/* .features-clean .intro {
+  font-size:16px;
+  max-width:500px;
+  margin:0 auto 60px;
+} */
+
+@media (max-width:767px) {
+  .features-clean .intro {
+    margin-bottom:40px;
+  }
+}
+
+.features-clean .item {
+  min-height:100px;
+  padding-left:80px;
+  margin-bottom:40px;
+}
+
+@media (max-width:767px) {
+  .features-clean .item {
+    min-height:0;
+  }
+}
+
+.features-clean .item .name {
+  font-size:20px;
+  font-weight:bold;
+  margin-top:0;
+  /* margin-bottom:20px; */
+  color:inherit;
+  text-align: left;
+}
+
+.features-clean .item .description {
+  font-size:15px;
+  margin-bottom:0;
+}
+
+.title-propuesta{
+  text-align: center;
+  font-weight: bold;
+  padding-bottom: 20px;
+} 
+
+.subtitle-propuesta {
+  font-size: 1.1em;
+  text-align: center;
+  padding-bottom: 30px;
+  line-height: 26px;
+}
+/* .features-clean .item .icon {
+  font-size:40px;
+  color:#1485ee;
+  float:left;
+  margin-left:-65px;
+} */
+
+/* i.fas.fa-desktop.fa-2x.icon {
+  color: #1485ee;
+  float: left;
+  margin-left: -65px;
+  margin-top: 40px;
+} */
+
+/* i.icon.fas.fa-desktop.fa-2x {
+  color: #1485ee;
+  font-size: 40px;
+  float: left;
+  margin-left: 125px;
+  margin-top: 20px;
+  position: absolute;
+  left:45%;
+} */
+
+.icon {
+  color: #1485ee;
+  font-size: 40px;
+  /* float: left; */
+  /* margin-left: 125px; */
+  margin-top: 20px;
+  position: absolute;
+  left: 45%;
+}
+/* finaliza servicios*/
+
+
+/* Feature Area css
+============================================================================================ */
+.services-inner {
+  /* border: 2px solid #48c7ec; */
+  /* margin-left: 35px; */
+  transition: .6s;
+}
+
+.our-services-wrapper {
+  margin-bottom: 10px;
+}
+.our-services-text {
+  overflow: hidden;
+  padding: 28px 0 25px;
+}
+.our-services-text h4 {
+  color: #222222;
+  font-size: 18px;
+  text-align: center;
+  font-weight: 700;
+  letter-spacing: 1px;
+  margin-bottom: 8px;
+  padding-bottom: 10px;
+  position: relative;
+  text-transform: uppercase;
+  margin-top: 50px;
+}
+.our-services-wrapper:hover .services-inner {
+  background: #fff none repeat scroll 0 0;
+  border: 2px solid transparent;
+  box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.2);
+}
+.our-services-text p {
+  margin-bottom: 0;
+}
+
+.subtitle-services {
+  text-align: center;
+}
+
+/* .p {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 6px;
+  color: #666;
+  margin-bottom: 10px;
+  text-align: center;
+} */
+
+/* End Feature Area css
+============================================================================================ */
+
+
 section#skills {
-  padding-top: 40px;
+  padding-top: 20px;
+  padding-bottom: 80px;
 
 }
 
 p.paragraph {
   margin-top: 20px;
-  padding-bottom: 50px;
+  padding-bottom: 20px;
   margin-left: 50px;
   margin-right: 50px;
-  color: white;
+  /* color: white; */
   font-size: 1.2em;
 }
 
@@ -112,9 +368,11 @@ img.softrestaurant {
   width: 253px;
 }
 
-.img-services {
-  height: 64px;
-  width: 64px;
+.img-servicio {
+  height: 60%;
+  width: 60%;
+  display:flex;
+  margin:0 auto;
 }
 
 p.text-services {
@@ -205,13 +463,13 @@ p.counter {
   color: white;
 }
 
-
 .title-partners {
   color: #0066d3;
   font-size: 2.2em;
   font-weight: 600;
   margin-top: 50px;
   margin-bottom: 30px;
+  font-family: 'montserrat', sans-serif !important;
 }
 
 section#partners {
@@ -243,3 +501,4 @@ section#partners {
     padding-top: 20px;
     color: white;
 }
+

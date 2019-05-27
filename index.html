@@ -4,14 +4,35 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>VicArr Solutions</title>
+    <title>VicAar Solutions</title>
+
+    <!-- Search Engines -->
+    <meta name="description" content="Expertos en software ASPEL SAE, Consultorias en sistemas contables, implementacion facturacion electronica, venta de equipos de computo." />
+    <meta name="author" content="Aaronsalas.com.mx" />
+    <meta name="keywords" content="Aaronsalas.com.mx, Consultores SAE, Sistemas contables, Sistemas Administrativos, Punto de venta y equipo de computo."/>
+    <link href="humans.txt" rel="author">
+
+    <!-- Open Graph -->
+    <meta property="og:locale" content="es_MX" />
+    <meta property="og:title" content="Aaronsalas" />
+    <meta property="og:description" content="Expertos en soluciones ASPEL" />
+    <meta property="og:url" content="https://aaronsalas.com.mx" />
+    <meta property="og:site_name" content="aaronsalas.com.mx" />
+    <meta property="og:type" content="website" />
+    <meta property="author" content="David Aguilera M."/>
+
+    <!--Import Bootstrap -->
     <link rel="stylesheet" href="assets/css/bootstrap.min.css">
     <link rel="stylesheet" href="assets/css/app.css">
+    
+    <!--Import Google Icon Font-->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Lily+Script+One" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
-    <link rel="stylesheet" href="assets/js/owl.carousel.min.js">
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+
 </head>
 <body>
     <!-- header -->
@@ -25,19 +46,19 @@
     <div class="collapse navbar-collapse" id="navbarResponsive">
       <ul class="navbar-nav ml-auto">
         <li class="nav-item active">
-          <a class="nav-link" href="#">INICIO</a>
+          <a class="nav-link" href="index.html">INICIO</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">ACERCA</a>
+          <a class="nav-link" href="index.html#Acerca">ACERCA</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">SERVICIOS</a>
+          <a class="nav-link" href="servicios.html">SERVICIOS</a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="#">PRODUCTOS</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">CONTACTO</a>
+          <a class="nav-link" href="contacto.html">CONTACTO</a>
         </li>
       </ul>
     </div>
@@ -110,7 +131,7 @@
       <div class="row text-center">
         <div class="col-xs-12 col-md-6 col-lg-3 counter-box">
           <div class="icon-box"><i class="fas fa-briefcase fa-5x"></i></div>
-          <p class="counter">290</p>
+          <p class="counter">2960</p>
           <p class="counter-title">proyectos Terminados</p>
         </div>
         <div class="col-xs-12 col-md-6 col-lg-3 counter-box">
@@ -137,14 +158,43 @@
   <div class="container">
       <div class="row">
        <div class="col-12">
-         <h3 class="title-skills">Servicios</h3>
-         <p class="paragraph"> Como parte de nuestra oferta de valor, muy importante
-          poder tener el control total de nuestra empresa, es por tal motivo integramos y ofrecemos multiples servicios, con la finalidad de poder 
-          cubrir toda y cada una de las necesidades de nuestros clientes. 
-         </p>
+         <h3 class="title-skills">SERVICIOS</h3>
+         <p class="paragraph">Diseñamos e implementamos soluciones a la medida de las necesidades tanto de emprendedores pymes y consorcios empresariales.</p>
        </div> 
       </div>
-      <div class="row services text-center">
+      <div class="row card-services">
+        <div class="col-sm-12 col-md-6">
+          <div class="card">
+           <a  href="servicios.html"><img class="card-img-top" src="assets/img/img4.jpg" alt="servicio"></a> 
+            <div class="card-body">
+              <h5 class="card-title">Servicios Residencial</h5>
+              <div class="badges">
+                  <span class="badge badge-warning">Cotizaciones</span>
+                  <span class="badge badge-info">Actualizaciones</span>
+                  <span class="badge badge-secondary">Cursos y capacitaciones</span>
+                  <p class="card-text">A continuacion mencionamos todos los servicios que Vicaar Soluction ofrece a todos sus clientes.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-12 col-md-6">
+          <div class="card">
+            <a  href="servicios.html" ><img class="card-img-top" src="assets/img/img4.jpg" alt="servicio"></a> 
+            <div class="card-body">
+              <h5 class="card-title">Servicios Empresariales</h5>
+              <div class="badges">
+                  <span class="badge badge-primary">Desarrollo Web</span>
+                  <span class="badge badge-dark">Cableado Estructurado</span>
+                  <span class="badge badge-success"> Soporte 1er Nivel</span>
+                  <p class="card-text">Soluciones y servicios de soporte tecnico para el usuario final y la infraestructura de TI.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+      <!-- <div class="row services text-center">
       <div class="col-xs-12 col-md-3">
         <img class="img-services" src="assets/img/app1.png" alt="Instalciones-y-Actualizaciones">
         <p class="text-services">Instalaciones / Update  (programas y aplicaciones) básico y especializado</p>
@@ -209,7 +259,7 @@
           <img class="img-services" src="assets/img/outsourcing.png" alt="outsourcing">
           <p class="text-services">Contrato outsourcing pymes</p>
       </div>
-    </div>
+    </div> -->
   </div>
 </section>
 <!-- /skills -->
@@ -257,6 +307,30 @@
   </div>
 </section>
 <!-- /Partners -->
+<!-- Boletin -->
+<section id=boletin>
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <h2 class="title-boletin text-center">¿Quieres recibir nuestras novedades?</h2>
+        <p class="parrafo-boletin text-center">Déjanos tu correo y te contactaremos cuando tengas algo importante que contarte</p>
+        <div class="col col-md-8 offset-md-2 pt-2">
+          <form method="POST" action="https://formspree.io/aaronsalas@hotmail.com">
+            <div class="form-row">
+              <div class="form-group col-12 col-md-6">
+                <input type="email" name="email" class="form-control" placeholder="E-mail">
+              </div>
+              <div class="form-group col-12 col-md-6">
+                <input type="submit" value="Enviar" class="btn btn-dark btn-block">
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- /Boletin -->
 <!-- Footer -->
 <footer id="footer" class="pt-4">
 <div class="container-fluid">
@@ -280,7 +354,6 @@
 <script src="assets/js/bootstrap.min.js"></script>
 <script src="assets/js/jquery.counterup.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
-<script src="assets/js/owl.carousel.min.js"></script>
 <script>
   jQuery(document).ready(function( $ )
   {
@@ -289,6 +362,41 @@
     time: 1000
     });
   });
+</script>
+<script>
+  jQuery(function($) {
+    $(window).on('scroll', function() {
+		if ($(this).scrollTop() >= 200) {
+			$('.navbar').addClass('fixed-top');
+		} else if ($(this).scrollTop() == 0) {
+			$('.navbar').removeClass('fixed-top');
+		}
+	});
+	
+	function adjustNav() {
+		var winWidth = $(window).width(),
+			dropdown = $('.dropdown'),
+			dropdownMenu = $('.dropdown-menu');
+		
+		if (winWidth >= 768) {
+			dropdown.on('mouseenter', function() {
+				$(this).addClass('show')
+					.children(dropdownMenu).addClass('show');
+			});
+			
+			dropdown.on('mouseleave', function() {
+				$(this).removeClass('show')
+					.children(dropdownMenu).removeClass('show');
+			});
+		} else {
+			dropdown.off('mouseenter mouseleave');
+		}
+	}
+	
+	$(window).on('resize', adjustNav);
+	
+	adjustNav();
+});
 </script>
 </body>
 </html>
