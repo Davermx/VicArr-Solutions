@@ -2,31 +2,6 @@
     width: 80px;
 }
 
-/* 
-.overlay-background.overlay-gradient {
-    background: #505cfd;
-    background: linear-gradient(to left, #00dbde, #505cfd);
-} */
-
-
-/* .hero {
-    height: 100vh;
-    min-height: 500px;
-    background-image: url('../img/img6.jpg');
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    filter: grayscale(40%);
-  } */
-  
-
-/* .navbar.navbar-expand-lg.navbar-light.bg-aa.shadow.fixed-top {
-      background-color: #213954;
-    background-color: #0068af;
-} */
-
-
-
 .shadow {
   box-shadow: none !important;
 }
@@ -34,6 +9,11 @@
 
 .nav-link{
     color: black !important;
+}
+
+a.link-servicio {
+  color: black;
+  text-decoration: none;
 }
 
 h2.font-weight-bold.title-plx {
@@ -76,13 +56,37 @@ h4.title-app {
  
  .banner_area:before {
     content: "";
-    background: url('../img/backgroundheader.png') no-repeat scroll center right;
+    background: url('../img/header-bg.png') no-repeat scroll center right;
     position: absolute;
     right: 0px;
     top: 0px;
     height: 100%;
     max-width: 1233px;
     width: 100%;
+}
+
+.container-prax {
+  max-width:  1960px;
+  margin: 0 auto;
+  background: #f9f9f9;
+  /* padding: 5px; */
+}
+
+/* .parallax {
+  background: url('../img/bg-score.jpg') no-repeat center;
+  background-size: cover;
+  background-attachment: fixed;
+  height: 760px;
+} */
+
+/* .parallax {
+  min-height: 670px;
+  background: transparent;
+} */
+
+h4.title-parallax {
+  z-index: 2;
+  position: relative;
 }
 
 .banner_area {
@@ -107,9 +111,32 @@ h4.title-app {
   bottom: 0px;
 }
 
+.banner_servicios_text {
+  padding-top: 150px;
+  position: relative;
+  padding-bottom: 50px;
+}
+
 .banner_inner_text h2 {
   font-size: 72px;
   color: #0b1033;
+  font-family: "Roboto", sans-serif;
+  font-weight: normal;
+}
+
+.banner_servicios_text:before {
+  content: "";
+  width: 213px;
+  /* height: 1px; */
+  position: absolute;
+  background: #ced0e0;
+  left: 0px;
+  bottom: 0px;
+}
+
+.banner_servicios_text h2 {
+  font-size: 72px;
+  color: #d1d4f1;
   font-family: "Roboto", sans-serif;
   font-weight: normal;
 }
@@ -121,37 +148,21 @@ h4.title-app {
   font-weight: normal;
   padding-top: 15px;
 }
-  /* header#Acerca {
-    background-image: url('');
-    height: 600px;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: contain;
-  } */
-
-
-/*   
-  header#header-services {
-    background-image: url('../img/img5.jpg');
-    height: 680px;
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-   } */
 
 p.title-correo{
   text-align: center;
-
 }
 
 #skills {
-  /* background: linear-gradient(90deg,#007bff, #0068af, #1c3643); */
-  /* background: linear-gradient(90deg,#025a86, #16589e 25%, #0066d3); */
-  /* background: rgba(3,109,222,1); */
-  /* background-color: #0066d3; */
-  background-image: linear-gradient( 180deg,#000, #ABDCFF, #0396FF 100%);
-  /* height: auto; */
+ background: url('../img/servicio-bg13.png');
+ background-size: cover;
+ height: 680px;
+ background-position: center;
+ margin-bottom: 30px;
+}
+.img-servicios {
+max-width: 100%;
+height: auto;
 }
 
 #Whatsapp {
@@ -176,19 +187,13 @@ section#boletin {
 /* inicia servicios */
 .features-services {
   color:#313437;
-  background-color:#fff;
+  /* background-color:#fff; */
   padding-bottom:30px;
+  background: url('../img/hero1-bg.png') no-repeat;
+  background-attachment: scroll;
+  background-position: center;
+  background-size: cover;
 }
-
-@media (max-width:767px) {
-  .features-services {
-    padding-bottom:10px;
-  }
-}
-
-/* .features-clean p {
-  color:#7d8285;
-} */
 
 .features-clean h2 {
   font-weight:bold;
@@ -197,13 +202,7 @@ section#boletin {
   color:inherit;
 }
 
-@media (max-width:767px) {
-  .features-clean h2 {
-    margin-bottom:25px;
-    padding-top:25px;
-    font-size:24px;
-  }
-}
+
 
 /* .features-clean .intro {
   font-size:16px;
@@ -211,29 +210,16 @@ section#boletin {
   margin:0 auto 60px;
 } */
 
-@media (max-width:767px) {
-  .features-clean .intro {
-    margin-bottom:40px;
-  }
-}
-
 .features-clean .item {
   min-height:100px;
   padding-left:80px;
   margin-bottom:40px;
 }
 
-@media (max-width:767px) {
-  .features-clean .item {
-    min-height:0;
-  }
-}
-
 .features-clean .item .name {
   font-size:20px;
   font-weight:bold;
   margin-top:0;
-  /* margin-bottom:20px; */
   color:inherit;
   text-align: left;
 }
@@ -255,35 +241,10 @@ section#boletin {
   padding-bottom: 30px;
   line-height: 26px;
 }
-/* .features-clean .item .icon {
-  font-size:40px;
-  color:#1485ee;
-  float:left;
-  margin-left:-65px;
-} */
-
-/* i.fas.fa-desktop.fa-2x.icon {
-  color: #1485ee;
-  float: left;
-  margin-left: -65px;
-  margin-top: 40px;
-} */
-
-/* i.icon.fas.fa-desktop.fa-2x {
-  color: #1485ee;
-  font-size: 40px;
-  float: left;
-  margin-left: 125px;
-  margin-top: 20px;
-  position: absolute;
-  left:45%;
-} */
 
 .icon {
   color: #1485ee;
   font-size: 40px;
-  /* float: left; */
-  /* margin-left: 125px; */
   margin-top: 20px;
   position: absolute;
   left: 45%;
@@ -331,24 +292,26 @@ section#boletin {
   text-align: center;
 }
 
-/* .p {
-  font-size: 14px;
-  font-weight: 400;
-  line-height: 6px;
-  color: #666;
-  margin-bottom: 10px;
-  text-align: center;
-} */
-
 /* End Feature Area css
 ============================================================================================ */
 
 
-section#skills {
-  padding-top: 20px;
-  padding-bottom: 80px;
-
+#mapa {
+  padding-top: 50px;
+  margin-top: 10px;
 }
+
+.i.icon.fas.fa-phone.fa-2x {
+  display: flex;
+  position: initial;
+}
+
+section#skills {
+  padding-top: 50px;
+  padding-bottom: 180px;
+  margin-bottom: 100px;
+}
+
 
 p.paragraph {
   margin-top: 20px;
@@ -357,6 +320,19 @@ p.paragraph {
   margin-right: 50px;
   /* color: white; */
   font-size: 1.2em;
+}
+
+p.paragraph-servicio {
+  margin-top: 20px;
+  padding-bottom: 10px;
+  margin-right: 50px;
+  color: #363636;
+  font-size: 1.2em;
+}
+
+.banner-img {
+  padding-bottom: 100px !important;
+
 }
 
 img.laptop-services {
@@ -387,12 +363,6 @@ img.outsourcing {
 
 #Acerca img {
   max-width: 100%;
-}
-
-/* #Acerca h2 {
-  font-family: 'Lily Script One', cursive; */
-  /* font-family: 'Quicksand', sans-serif;
-  font-weight: 800; */
 }
 
 #Whatsapp  p {
@@ -476,6 +446,9 @@ section#partners {
   margin-bottom: 60px;
 }
 
+.row.partnersfilter {
+  padding-top: 100px;
+}
 .partnersfilter img {
   filter: grayscale(1);
   -webkit-filter: grayscale(1);
@@ -491,14 +464,59 @@ section#partners {
   -o-filter: grayscale(0);
 }
 
+/* hr.divisor {
+  border-color: rgba(255, 255, 255, 0.582);
+ 
+} */
 
 #footer {
-  /* background: linear-gradient(90deg, #0068af, #0068AF); */
-  /* width: 100%; */
     display: block;
     text-align: center;
     background-color: #1b2127;
     padding-top: 20px;
     color: white;
+}
+
+.row.align-items-center {
+  height: 100px;
+}
+
+.footext {
+  margin-top: 50px;
+}
+
+ul.Redes-icons {
+  list-style: none;
+  padding-top: 10px;
+}
+li.li-cons {
+  display: inline-flex !important;
+  padding-right: 1.5em;
+}
+
+@media (max-width:767px) {
+  .features-services {
+    padding-bottom:10px;
+  }
+}
+
+@media (max-width:767px) {
+  .features-clean h2 {
+    margin-bottom:15px;
+    padding-top:25px;
+    font-size:24px;
+  }
+}
+
+@media (max-width:767px) {
+  .features-clean .intro {
+    margin-bottom:40px;
+  }
+}
+
+@media (max-width:767px) {
+  .features-clean .item {
+    min-height:0;
+  }
 }
 
