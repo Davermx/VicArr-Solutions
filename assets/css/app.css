@@ -6,7 +6,50 @@
   box-shadow: none !important;
 }
 
+#listado {
+  /* background: #a4b0be; */
+  background: #ced6e0;
+  /* margin: auto; */
+}
 
+.pdf-container {
+  text-align: center;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+.title-listado {
+  color: #212121;
+}
+
+ /* prueba pdf*/
+/* .pdfobject-com {
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 2016;
+} */
+
+/* .pdfobject-com a:link, .pdfobject-com a:visited {
+	color: #fff;
+	font-weight: bold;
+	display: block;
+	padding: .25rem 1rem;
+	background: #6699FF;
+	text-decoration: none;
+} */
+
+.pdfobject-com a:hover, .pdfobject-com a:visited:hover {
+	color: #FFF;
+	background: #FF3366;
+	text-decoration: none;
+}
+
+/* .pdfobject-com a:before {
+  content: "\2190";
+  margin-right: .25rem;
+} */
+/* prueba pdf*/
 .nav-link{
     color: black !important;
 }
@@ -40,10 +83,14 @@ h4.title-app {
 
 
 .lead {
-    color: black;
-    font-weight: 500;
+  color: black;
+  font-weight: 500;
 }
 
+
+.bg-dark {
+  background-color: rgba(0, 0, 0, 0.1)!important;
+}
 
 #plx {
     background-image: url('../img/img8.jpg');
@@ -53,8 +100,8 @@ h4.title-app {
     background-repeat: no-repeat;
     background-size: cover;
   }
- 
- .banner_area:before {
+
+.banner_area:before {
     content: "";
     background: url('../img/header-bg.png') no-repeat scroll center right;
     position: absolute;
@@ -65,6 +112,7 @@ h4.title-app {
     width: 100%;
 }
 
+
 .container-prax {
   max-width:  1960px;
   margin: 0 auto;
@@ -72,17 +120,32 @@ h4.title-app {
   /* padding: 5px; */
 }
 
-/* .parallax {
-  background: url('../img/bg-score.jpg') no-repeat center;
-  background-size: cover;
-  background-attachment: fixed;
-  height: 760px;
-} */
-
-/* .parallax {
-  min-height: 670px;
-  background: transparent;
-} */
+/*  productos  */
+.productos{
+  margin-top:-15%;
+  padding: 10%;
+}
+.productos h4{
+  color: #1485ee;
+  font-weight: bold;
+  font-size: 30px;
+}
+.productos .subheading{
+  color: #ff6348;
+  font-size: 20px;
+}
+.productos .row
+{
+  margin-top: 10%;
+}
+.productos-img 
+{
+  text-align: center;
+}
+.productos-img img{
+  width: 40%;
+}
+/*  /productos  */
 
 h4.title-parallax {
   z-index: 2;
@@ -295,7 +358,6 @@ section#boletin {
 /* End Feature Area css
 ============================================================================================ */
 
-
 #mapa {
   padding-top: 50px;
   margin-top: 10px;
@@ -387,6 +449,49 @@ section#counters {
   color: #ffffff;
 }
 
+#why {
+  background-color:  #212121!important;
+  background: url('../img/bg-why.jpg');
+  background-repeat: no-repeat;
+  /* background-size: cover; */
+  background-position: left;
+  padding-top: 0px;
+  padding-bottom: 0px;
+}
+
+.why-img {
+  max-width: 100%;
+}
+
+.d-flex {
+  display: flex !important;
+}
+.icon-why {
+  color: #1485ee;
+  margin-right: 1rem !important;
+}
+
+.i.fas.fa-award.fa-4x.icon-whyc {
+  /* margin: 0 16px 0 0; */
+  color: #1485ee;
+  margin-right: 2rem !important;
+  padding-right: 10px !important;
+}
+
+.flex-fill {
+  flex: 1 1 auto!important;
+}
+
+p.text-grey {
+ color: #e9ecef;
+}
+
+
+.i.fas.fa-file-pdf.fa-3x {
+  background-color: #747d8c;
+  border-radius: 50%;
+  padding: 50px;
+}
 
 p.counter {
   color: white;
@@ -469,11 +574,6 @@ section#partners {
   -o-filter: grayscale(0);
 }
 
-/* hr.divisor {
-  border-color: rgba(255, 255, 255, 0.582);
- 
-} */
-
 #footer {
     display: block;
     text-align: center;
@@ -524,4 +624,3 @@ li.li-cons {
     min-height:0;
   }
 }
-
